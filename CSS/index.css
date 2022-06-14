@@ -31,42 +31,25 @@ body {
   transition: background 1s ease;
 }
 
-.dp-menu ul ul {
+.sub-menu {
   display: none;
-  left: 0;
   position: absolute;
-}
-.dp-menu ul li:hover ul {
-  display: block;
-}
-
-.dp-menu ul ul {
-  width: 150px;
-}
-
-.dp-menu ul ul li a {
-  display: block;
-}
-
-.dp-menu ul ul ul li {
-  visibility: hidden;
   left: 0;
-  top: 0;
-  display: none;
+  top: 100%;
 }
-.dp-menu ul ul li:hover li {
-  visibility: visible;
+
+.dp-menu .menu li:hover .sub-menu {
   display: block;
 }
 
-header {
-  width: 100%;
-  color: rgb(0, 241, 32);
-  text-align: center;
-  font-size: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+.subsub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
-.test {
-  background-color: black;
+
+.dp-menu .menu .sub-menu li:hover .subsub-menu {
+  display: block;
+  position: relative;
 }
